@@ -5,15 +5,16 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const pool = new Pool({
-  user: 'postgres',  // your username
-  host: 'verbosely-zealous-hyrax.data-1.euc1.tembo.io',  // host provided by Tembo
-  database: 'look_door',  // your database name
-  password: '93ZlYtespWEifno2',  // your password
+  user: 'postgres',
+  host: 'verbosely-zealous-hyrax.data-1.euc1.tembo.io',
+  database: 'lock_door',
+  password: '93ZlYtespWEifno2',  // Ensure this matches the correct password
   port: 5432,
   ssl: {
-    rejectUnauthorized: false,  // Allow self-signed certificates
+    rejectUnauthorized: false
   }
 });
+
 
 
 // Check the connection (optional)
