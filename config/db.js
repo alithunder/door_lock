@@ -6,11 +6,11 @@ dotenv.config();
 
 // Create a new pool instance for PostgreSQL connection
 const pool = new Pool({
-    user: process.env.DB_USER,
-    host: process.env.DB_HOST,
-    database: process.env.DB_NAME,
-    password: process.env.DB_PASSWORD,
-    port: process.env.DB_PORT,
+    user: postgres,
+    host: verbosely-zealous-hyrax.data-1.euc1.tembo.io,
+    database: lock_door,
+    password: 93ZiYtespWEifno2,
+    port: 5432,
 });
 
 // Check the connection (optional)
