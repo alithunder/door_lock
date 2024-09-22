@@ -4,14 +4,17 @@ const dotenv = require('dotenv');
 // Load environment variables from .env file
 dotenv.config();
 
-// Create a new pool instance for PostgreSQL connection
 const pool = new Pool({
-    user: 'postgres',
-    host: 'verbosely-zealous-hyrax.data-1.euc1.tembo.io',
-    database: 'look_door',
-    password: '93ZiYtespWEifno2',
-    port: 5432,
+  user: 'postgres',  // your username
+  host: 'verbosely-zealous-hyrax.data-1.euc1.tembo.io',  // host provided by Tembo
+  database: 'look_door',  // your database name
+  password: '93ZlYtespWEifno2',  // your password
+  port: 5432,
+  ssl: {
+    rejectUnauthorized: false,  // Allow self-signed certificates
+  }
 });
+
 
 // Check the connection (optional)
 pool.connect((err) => {
