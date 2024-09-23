@@ -7,7 +7,7 @@ dotenv.config();
 const pool = new Pool({
   user: 'postgres',
   host: 'verbosely-zealous-hyrax.data-1.euc1.tembo.io',
-  database: 'lock_door',
+  database: 'look_door',
   password: '93ZlYtespWEifno2',  // Ensure this matches the correct password
   port: 5432,
   ssl: {
