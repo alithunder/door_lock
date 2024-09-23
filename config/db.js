@@ -7,7 +7,7 @@ dotenv.config();
 const client = new Client({
   user: 'postgres',
   host: 'verbosely-zealous-hyrax.data-1.euc1.tembo.io',
-  database: 'look_app',
+  database: 'look_door',
   password: '93ZiYtespWEifno2',  // Ensure this matches the correct password
   port: 5432,
   ssl: { rejectUnauthorized: false },
