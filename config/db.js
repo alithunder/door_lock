@@ -10,9 +10,7 @@ const pool = new Pool({
   database: 'look_door',
   password: '93ZlYtespWEifno2',  // Ensure this matches the correct password
   port: 5432,
-  ssl: {
-    rejectUnauthorized: false
-  }
+  ssl: false,
 });
 
 
